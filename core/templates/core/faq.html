@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>{% block title %}Frequently Asked Question{% endblock title %}</title>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content=" Team Iran - FIRST Global Challenge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	
+
+	 
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href={% static 'images/favicon.png' %} />
+
+
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href={% static 'plugins/bootstrap/bootstrap.min.css' %}>
+	<!-- Ionic Icon Css -->
+	<link rel="stylesheet" href={% static 'plugins/Ionicons/css/ionicons.min.css' %}>
+	<!-- animate.css -->
+	<link rel="stylesheet" href={% static 'plugins/animate-css/animate.css' %}>
+	<!-- Magnify Popup -->
+	<link rel="stylesheet" href={% static 'plugins/magnific-popup/magnific-popup.css' %}>
+	<!-- Slick CSS -->
+	<link rel="stylesheet" href={% static 'plugins/slick/slick.css' %}>
+
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href={% static 'css/style.css' %}>
+
+</head>
+
+<body id="body">
+
+	{% include 'core/header.html' %}
+
+
+	<section class="page-title bg-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h1>FAQ</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="page-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h2 class="mb-4">Frequently Asked Questions</h2>
+					<p>Do you have a question? <br> Search this page. If you couldn't find it, <a
+							href="{% url 'contact' %}">Contact Us</a></p>
+				</div>
+				<div class="col-lg-8 mt-5 mt-lg-0">
+					<div class="pl-0 pl-lg-4">
+						<h4>1.Who are we? <a href="#who-are-we" id="who-are-we">¶</a></h4>
+						<p>We represent Iran in the FIRST Global Challenge robotics competition.
+							We have participated in this competition <b>Every Year</b>, since 2017, the first round of
+							the competition.</p>
+
+						<h4>2. What is FIRST Global Challenge? <a href="#what-is-fgc" id="what-is-fgc">¶</a></h4>
+						<p>The FIRST Global Challenge is an olympics-style, international robotics competition that
+							takes place in a different country each year. FIRST Global invites each nation to send a
+							team to build and program a robot to compete. Teams work together to complete tasks in a
+							game themed around one of the greatest challenges facing our planet, including the 14 Grand
+							Challenges for Engineering, in an effort to foster understanding and cooperation among the
+							youth of the world as they use their abilities to solve the world’s problems. The challenges
+							we face as a global society need to be solved, and the next generation can meet the task —
+							together.
+						</p>
+
+						<h4>5. FGC 2022 - Geneva <a href="#fgc-2022" id="fgc-2022">¶</a></h4>
+						<p>Join us from 13-16 October 2022 in Geneva, Switzerland! More than 180 countries will come
+							together face-to-face in the spirit of global purpose, unity, and collaboration. There is no
+							more appropriate place for this year’s FIRST Global Challenge than Geneva, the “Capital of
+							Peace” where nations gather to solve diplomatic challenges and where scientific innovation
+							flourishes.
+						</p>
+
+						<h4>3. How to support us? <a href="#how-to-help" id="how-to-help">¶</a></h4>
+						<p>You can support this team both financially and spiritually. Your spiritual support can be in
+							the form of holding some additional courses (if you have particular expertise that is
+							suitable for this age group), providing a training place, workshop or hall.
+							<br>
+							You can also volunteer to help in the form of technical and executive staff based on time.
+							<br>
+							Your financial support can also be in different ways, including paying cash contributions to
+							cover some expenses of the team inside or outside Iran, becoming a sponsor
+							in the team, paying for face-to-face and online classes, and paying for coaches' teaching
+							fees, and similar cases.
+						</p>
+						<p>If you are willing to help us, please <a href="{% url 'contact' %}">Contact Us</a></p>
+
+						<h4>4. How to participate? <a href="#how-to-participate" id="how-to-participate">¶</a></h4>
+						<p>
+							After announcing the public call to send resumes to the team's official email, the
+							examination and selection of students will begin in June.
+							According to the policy of this year's executive team, the main members of the team are 15
+							students. Finally, five students will represent the Iranian team in the final four days of
+							the competition, along with the head coach and the team manager.
+							It should be mentioned that in the end, a certificate of participation in the competition
+							will be issued to all 15 students, coaches, executives, and the primary staff of the team.
+							
+						</p>
+						<p>
+							<a href="{% url 'contact' %">Contact Us </a> if you think you can use the opportunity!
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include 'core/footer.html' %}
+
+
+	<!--Scroll to top-->
+	<div id="scroll-to-top" class="scroll-to-top">
+		<span class="icon ion-ios-arrow-up"></span>
+	</div>
+
+	<!-- 
+    Essential Scripts
+    =====================================-->
+
+
+	<!-- Main jQuery -->
+	<script src={% static 'plugins/jquery/jquery.min.js' %}></script>
+	<!-- Bootstrap 3.1 -->
+	<script src={% static 'plugins/bootstrap/bootstrap.min.js' %}></script>
+	<!-- slick Carousel -->
+	<script src={% static 'plugins/slick/slick.min.js' %}></script>
+	<script src={% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}></script>
+	<!-- filter -->
+	<script src={% static 'plugins/shuffle/shuffle.min.js' %}></script>
+	<script src={% static 'plugins/SyoTimer/jquery.syotimer.min.js' %}></script>
+
+	<script src={% static 'js/script.js' %}></script>
+
+</body>
+
+</html>

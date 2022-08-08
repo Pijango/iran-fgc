@@ -1,0 +1,255 @@
+{% load static %}
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>{% block title %}Team Iran{% endblock title %}</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content=" Team Iran - FIRST Global Challenge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href={% static 'images/favicon.png' %} />
+  <!-- <link rel="shortcut icon" type="image/x-icon" href={% static 'images/logo.svg' %} /> -->
+
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href={% static 'plugins/bootstrap/bootstrap.min.css' %}>
+  <!-- Ionic Icon Css -->
+  <link rel="stylesheet" href={% static 'plugins/Ionicons/css/ionicons.min.css' %}>
+  <!-- animate.css -->
+  <link rel="stylesheet" href={% static 'plugins/animate-css/animate.css' %}>
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" href={% static 'plugins/magnific-popup/magnific-popup.css' %}>
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href={% static 'plugins/slick/slick.css' %}>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href={% static 'css/style.css' %}>
+
+</head>
+
+<body id="body">
+  {% include 'core/header.html' %}
+
+  <!-- Slider Start -->
+  <section class="slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h1 class="animated fadeInUp">Team Iran <br><br> First Global Challenge</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wrapper Start -->
+  <section class="about section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="block">
+            <div class="section-title">
+              <h2>About Us</h2>
+              <p>STE(A)M | Robots | Innovation | Love | Peace</p>
+            </div>
+            <p>We represent <b>Iran</b> in the <b>FIRST Global Challenge</b> robotics competition.
+              <br><br>We have participated in this competition <b>Every Year</b>, since 2017. <br><br> Our team consists
+              of young people who try to solve global challenges with their <b>Robots</b> & <b>Ideas</b>.
+            </p>
+            <a href="{% url 'about' %}" class="btn btn-view-works">More About Us!</a>
+
+          </div>
+        </div><!-- .col-md-7 close -->
+        <div class="col-md-5">
+          <div class="block">
+            <img style="border-radius: 50%" src={% static 'images/wrapper-img.png' %} alt="Img">
+          </div>
+        </div><!-- .col-md-5 close -->
+      </div>
+    </div>
+  </section>
+
+  <section class="feature bg-2">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-md-6">
+          <h2 class="section-subtitle">WE BELIEVE IN GREAT IDEAS</h2>
+          <p>FIRST Global Challenge is cooperation of all the countries around the world, to solve global issues
+          </p>
+          <p>We, Team Iran, as a participant consider it as our duty to implement our ideas toward solving these issues
+          </p>
+
+          <a href="{% url 'faq' %}#what-is-fgc" class="btn btn-view-works">What is FIRST Global Challenge?</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Start -->
+  <section class="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h2>Our Awards and Honors</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="service-item">
+            <i class="ion-trophy"></i>
+            <h4>Experience</h4>
+            <p>Participation in FGC every year from 2017 until 2022</p>
+            <p>Present in WRO 2013 and 2016</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="service-item">
+            <i class="icon ion-leaf"></i>
+            <h4>Environment Award</h4>
+            <p>FGC 2021 <br> FIRST Global Grand Challenge Award <br> Environment - 2nd position</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="service-item">
+            <i class="ion-person"></i>
+            <h4>Outstanding Mentor</h4>
+            <p>FGC 2020 <br> Outstanding Mentor Award </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-4 col-sm-6">
+          <div class="service-item">
+            <i class="ion-ios-infinite"></i>
+            <h4>Different Students</h4>
+            <p>More than 150 students and learners, all around the country!</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-4 col-sm-6">
+          <div class="service-item">
+            <i class="ion-ios-people"></i>
+            <h4>Experienced Mentors</h4>
+            <p>14 inventions, designed and built by mentors</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to action Start -->
+
+  <section class="call-to-action bg-1 section-sm overly">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h2 class="mb-3">Great Opportunity</h2>
+            <p>Read more about what we do and who we are. <br>If you want to join us, or help us, or have any question,
+              check the link below! <br>
+              <a class="btn btn-main btn-solid-border" href="{% url 'contact' %}">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Start -->
+  <section class="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title text-center">
+            <h2>Information About Us</h2>
+            <p>We try to introduce a whole new team every year, with different students, so that more people get to
+              participate!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="block">
+            <ul class="counter-box clearfix">
+              <li>
+                <div class="counter-item">
+                  <i class="ion-university"></i>
+                  <h4 class="count" data-count="150"></h4>
+                  <span>Students</span>
+                </div>
+              </li>
+              <li>
+                <div class="counter-item">
+                  <i class="ion-ios-people"></i>
+                  <h4 class="count" data-count="15"></h4>
+                  <span>Mentors</span>
+                </div>
+              </li>
+              <li>
+                <div class="counter-item">
+                  <i class="ion-ios-timer"></i>
+                  <h4 class="count" data-count="9"></h4>
+                  <span>Years of Experience</span>
+                </div>
+              </li>
+              <li>
+                <div class="counter-item">
+                  <i class="ion-podium"></i>
+                  <h4 class="count" data-count="8"></h4>
+                  <span>Perticipated Competitions</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <img src="{% static 'images/team.jpg' %}" alt="Team Picture">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include 'core/footer.html' %}
+
+
+  <!--Scroll to top-->
+  <div id="scroll-to-top" class="scroll-to-top">
+    <span class="icon ion-ios-arrow-up"></span>
+  </div>
+
+  <!-- 
+    Essential Scripts
+    =====================================-->
+
+
+  <!-- Main jQuery -->
+  <script src={% static 'plugins/jquery/jquery.min.js' %}></script>
+  <!-- Bootstrap 3.1 -->
+  <script src={% static 'plugins/bootstrap/bootstrap.min.js' %}></script>
+  <!-- slick Carousel -->
+  <script src={% static 'plugins/slick/slick.min.js' %}></script>
+  <script src={% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}></script>
+  <!-- filter -->
+  <script src={% static 'plugins/shuffle/shuffle.min.js' %}></script>
+  <script src={% static 'plugins/SyoTimer/jquery.syotimer.min.js' %}></script>
+
+
+  <script src={% static 'js/script.js' %}></script>
+
+</body>
+
+</html>

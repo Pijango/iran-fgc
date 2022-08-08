@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>{% block title %}Contact Us{% endblock title %}</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content=" Team Iran - FIRST Global Challenge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+
+   
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href={% static 'images/favicon.png' %} />
+
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href={% static 'plugins/bootstrap/bootstrap.min.css' %}>
+  <!-- Ionic Icon Css -->
+  <link rel="stylesheet" href={% static 'plugins/Ionicons/css/ionicons.min.css' %}>
+  <!-- animate.css -->
+  <link rel="stylesheet" href={% static 'plugins/animate-css/animate.css' %}>
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" href={% static 'plugins/magnific-popup/magnific-popup.css' %}>
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href={% static 'plugins/slick/slick.css' %}>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href={% static 'css/style.css' %}>
+
+</head>
+
+<body id="body">
+  {% include 'core/header.html' %}
+
+  <section class="page-title bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h1>Contact Us</h1>
+            <p>If you want to join our team, or have any question regarding anything <br> Send us a message!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact form start -->
+  <section class="contact-form">
+    <div class="container">
+      <p>
+        {% if message %}
+        <b>{{ message }}</b>
+        {% endif %}
+      </p>
+      <form method="post" class="row" id="contact-form">
+        {% csrf_token %}
+
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+            <div class="form-group">
+              <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input name="email" type="email" class="form-control" placeholder="Email Address" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </div>
+            <div class="form-group">
+              <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+            <div class="form-group-2">
+              <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button class="btn btn-default" type="submit">Send Message</button>
+          </div>
+        </div>
+        <div class="error" id="error">Sorry Msg dose not sent</div>
+        <div class="success" id="success">Message Sent</div>
+      </form>
+      <div class="contact-box row">
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+            <h2>Other ways of connecting with us!</h2>
+            <ul class="address-block">
+              <li>
+                <i class="ion-ios-email-outline"></i>Email: teamiranfgc@gmail.com
+              </li>
+              <li>
+                <i class="ion-ios-telephone-outline"></i>Phone: +52 55 7918 9366
+              </li>
+            </ul>
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.instagram.com/teamiranfgc/"><i class="ion-social-instagram-outline"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/teamiranfgc"><i class="ion-social-twitter-outline"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include 'core/footer.html' %}
+
+
+  <!--Scroll to top-->
+  <div id="scroll-to-top" class="scroll-to-top">
+    <span class="icon ion-ios-arrow-up"></span>
+  </div>
+  <!-- 
+    Essential Scripts
+    =====================================-->
+
+
+  <!-- Main jQuery -->
+  <script src={% static 'plugins/jquery/jquery.min.js' %}></script>
+  <!-- Bootstrap 3.1 -->
+  <script src={% static 'plugins/bootstrap/bootstrap.min.js' %}></script>
+  <!-- slick Carousel -->
+  <script src={% static 'plugins/slick/slick.min.js' %}></script>
+  <script src={% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}></script>
+  <!-- filter -->
+  <script src={% static 'plugins/shuffle/shuffle.min.js' %}></script>
+  <script src={% static 'plugins/SyoTimer/jquery.syotimer.min.js' %}></script>
+
+
+  <script src={% static 'js/script.js' %}></script>
+
+</body>
+
+</html>

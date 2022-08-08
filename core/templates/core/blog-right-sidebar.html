@@ -1,0 +1,394 @@
+{% load static %}
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock title %}</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content=" Team Iran - FIRST Global Challenge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+
+   
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href={% static 'images/favicon.png' %} />
+
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href={% static 'plugins/bootstrap/bootstrap.min.css' %}>
+  <!-- Ionic Icon Css -->
+  <link rel="stylesheet" href={% static 'plugins/Ionicons/css/ionicons.min.css' %}>
+  <!-- animate.css -->
+  <link rel="stylesheet" href={% static 'plugins/animate-css/animate.css' %}>
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" href={% static 'plugins/magnific-popup/magnific-popup.css' %}>
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href={% static 'plugins/slick/slick.css' %}>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href={% static 'css/style.css' %}>
+
+</head>
+
+<body id="body">
+
+  {% include 'core/header.html' %}
+
+
+  <section class="page-title bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h1>Blog Right Sidebar</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quibusdam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="post">
+            <div class="post-media post-thumb">
+              <a href="{% url 'blog-single' %}">
+                <img src={% static 'images/blog/blog-post-1.jpg' %} alt="">
+              </a>
+            </div>
+            <h3 class="post-title"><a href="{% url 'blog-single' %}">How To Wear Bright Shoes</a></h3>
+            <div class="post-meta">
+              <ul>
+                <li>
+                  <i class="ion-calendar"></i> 20, MAR 2020
+                </li>
+                <li>
+                  <i class="ion-android-people"></i> POSTED BY ADMIN
+                </li>
+                <li>
+                  <a href="{% url 'blog-grid.html"><i class="ion-pricetags"></i> LIFESTYLE</a>,<a
+                    href="blog-left-sidebar.html"> TRAVEL</a>, <a href="blog-right-sidebar' %}">FASHION</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum
+                asperiores
+                vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat
+                quae. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae ab doloremque accusamus sit, eos dolorum
+                officiis a
+                perspiciatis aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, facere. </p>
+              <a href="{% url 'blog-single' %}" class="btn btn-main">Continue Reading</a>
+            </div>
+
+          </div>
+          <div class="post">
+            <div class="post-media post-thumb">
+              <a href="{% url 'blog-single' %}">
+                <img src={% static 'images/blog/blog-post-2.jpg' %} alt="">
+              </a>
+            </div>
+            <h3 class="post-title"><a href="{% url 'blog-single' %}">Two Ways To Wear Straight Shoes</a></h3>
+            <div class="post-meta">
+              <ul>
+                <li>
+                  <i class="ion-calendar"></i> 20, MAR 2020
+                </li>
+                <li>
+                  <i class="ion-android-people"></i> POSTED BY ADMIN
+                </li>
+                <li>
+                  <a href="{% url 'blog-grid.html"><i class="ion-pricetags"></i> LIFESTYLE</a>,<a
+                    href="blog-left-sidebar.html"> TRAVEL</a>, <a href="blog-right-sidebar' %}">FASHION</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum
+                asperiores
+                vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat
+                quae. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae ab doloremque accusamus sit, eos dolorum
+                officiis a
+                perspiciatis aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, facere</p>
+              <a href="{% url 'blog-single' %}" class="btn btn-main">Continue Reading</a>
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-media post-thumb">
+              <a href="{% url 'blog-single' %}">
+                <img src={% static 'images/blog/blog-post-3.jpg' %} alt="">
+              </a>
+            </div>
+            <h3 class="post-title"><a href="{% url 'blog-single' %}">Making A Denim Statement</a></h3>
+            <div class="post-meta">
+              <ul>
+                <li>
+                  <i class="ion-calendar"></i> 20, MAR 2020
+                </li>
+                <li>
+                  <i class="ion-android-people"></i> POSTED BY ADMIN
+                </li>
+                <li>
+                  <a href="{% url 'blog-grid.html"><i class="ion-pricetags"></i> LIFESTYLE</a>,<a
+                    href="blog-left-sidebar.html"> TRAVEL</a>, <a href="blog-right-sidebar' %}">FASHION</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum
+                asperiores
+                vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat
+                quae. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae ab doloremque accusamus sit, eos dolorum
+                officiis a
+                perspiciatis aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, facere</p>
+              <a href="{% url 'blog-single' %}" class="btn btn-main">Continue Reading</a>
+            </div>
+          </div>
+
+          <div class="post">
+            <h3 class="post-title"><a href="{% url 'blog-single' %}">Standard Text Post</a></h3>
+            <div class="post-meta">
+              <ul>
+                <li>
+                  <i class="ion-calendar"></i> 20, MAR 2020
+                </li>
+                <li>
+                  <i class="ion-android-people"></i> POSTED BY ADMIN
+                </li>
+                <li>
+                  <a href="{% url 'blog-grid.html"><i class="ion-pricetags"></i> LIFESTYLE</a>,<a
+                    href="blog-left-sidebar.html"> TRAVEL</a>, <a href="blog-right-sidebar' %}">FASHION</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum
+                asperiores
+                vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat
+                quae. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae ab doloremque accusamus sit, eos dolorum
+                officiis a
+                perspiciatis aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, facere</p>
+              <a href="{% url 'blog-single' %}" class="btn btn-main">Continue Reading</a>
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-media post-media-audio">
+              <iframe
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/115637399&amp;color=ff5500&amp;auto_play=false&amp;show_artwork=true"
+                class="DRAGDIS_iframe"></iframe>
+            </div>
+            <h3 class="post-title"><a href="{% url 'blog-single' %}">Standard Audio Post</a></h3>
+            <div class="post-meta">
+              <ul>
+                <li>
+                  <i class="ion-calendar"></i> 20, MAR 2020
+                </li>
+                <li>
+                  <i class="ion-android-people"></i> POSTED BY ADMIN
+                </li>
+                <li>
+                  <a href="{% url 'blog-grid.html"><i class="ion-pricetags"></i> LIFESTYLE</a>,<a
+                    href="blog-left-sidebar.html"> TRAVEL</a>, <a href="blog-right-sidebar' %}">FASHION</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum
+                asperiores
+                vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat
+                quae. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae ab doloremque accusamus sit, eos dolorum
+                officiis a
+                perspiciatis aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, facere</p>
+              <a href="{% url 'blog-single' %}" class="btn btn-main">Continue Reading</a>
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-media post-media-audio">
+              <iframe height="400" src="https://www.youtube.com/embed/LKFuXETZUsI" allowfullscreen></iframe>
+            </div>
+            <h3 class="post-title"><a href="{% url 'blog-single' %}">Standard Video Post</a></h3>
+            <div class="post-meta">
+              <ul>
+                <li>
+                  <i class="ion-calendar"></i> 20, MAR 2020
+                </li>
+                <li>
+                  <i class="ion-android-people"></i> POSTED BY ADMIN
+                </li>
+                <li>
+                  <a href="{% url 'blog-grid.html"><i class="ion-pricetags"></i> LIFESTYLE</a>,<a
+                    href="blog-left-sidebar.html"> TRAVEL</a>, <a href="blog-right-sidebar' %}">FASHION</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum
+                asperiores
+                vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat
+                quae. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae ab doloremque accusamus sit, eos dolorum
+                officiis a
+                perspiciatis aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, facere</p>
+              <a href="{% url 'blog-single' %}" class="btn btn-main">Continue Reading</a>
+            </div>
+          </div>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination post-pagination">
+              <li class="page-item"><a class="page-link" href="{% url 'blog-grid' %}">Prev</a></li>
+              <li class="page-item"><a class="page-link" href="{% url 'blog-grid' %}">1</a></li>
+              <li class="page-item"><a class="page-link" href="{% url 'blog-grid' %}">2</a></li>
+              <li class="page-item"><a class="page-link" href="{% url 'blog-grid' %}">3</a></li>
+              <li class="page-item"><a class="page-link" href="{% url 'blog-grid' %}">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-4">
+          <div class="pl-0 pl-xl-4">
+            <aside class="sidebar pt-5 pt-lg-0 mt-5 mt-lg-0">
+              <!-- Widget Latest Posts -->
+              <div class="widget widget-latest-post">
+                <h4 class="widget-title">Latest Posts</h4>
+                <div class="media">
+                  <a class="pull-left" href="{% url 'blog-single' %}">
+                    <img class="media-object" src={% static 'images/blog/post-thumb.jpg' %} alt="Image">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a href="{% url 'blog-single' %}">Introducing Swift for Mac</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, officia.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <a class="pull-left" href="{% url 'blog-single' %}">
+                    <img class="media-object" src={% static 'images/blog/post-thumb-2.jpg' %} alt="Image">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a href="{% url 'blog-single' %}">Welcome to Themefisher Family</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, officia.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <a class="pull-left" href="{% url 'blog-single' %}">
+                    <img class="media-object" src={% static 'images/blog/post-thumb-3.jpg' %} alt="Image">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a href="{% url 'blog-single' %}">Warm welcome from swift</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, officia.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <a class="pull-left" href="{% url 'blog-single' %}">
+                    <img class="media-object" src={% static 'images/blog/post-thumb-4.jpg' %} alt="Image">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a href="{% url 'blog-single' %}">Introducing Swift for Mac</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, officia.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Latest Posts -->
+
+              <!-- Widget Category -->
+              <div class="widget widget-category">
+                <h4 class="widget-title">Categories</h4>
+                <ul class="widget-category-list">
+                  <li><a href="{% url 'blog-grid' %}">Animals</a>
+                  </li>
+                  <li><a href="{% url 'blog-grid' %}">Landscape</a>
+                  </li>
+                  <li><a href="{% url 'blog-grid' %}">Portrait</a>
+                  </li>
+                  <li><a href="{% url 'blog-grid' %}">Wild Life</a>
+                  </li>
+                  <li><a href="{% url 'blog-grid' %}">Video</a>
+                  </li>
+                </ul>
+              </div> <!-- End category  -->
+
+              <!-- Widget tag -->
+              <div class="widget widget-tag">
+                <h4 class="widget-title">Tag Cloud</h4>
+                <ul class="widget-tag-list">
+                  <li><a href="{% url 'blog-grid' %}">Animals</a>
+                  </li>
+                  <li><a href="{% url 'blog-grid' %}">Landscape</a>
+                  </li>
+                  <li><a href="{% url 'blog-grid' %}">Portrait</a>
+                  </li>
+                  <li><a href="{% url 'blog-grid' %}">Wild Life</a>
+                  </li>
+                  <li><a href="{% url 'blog-grid' %}">Video</a>
+                  </li>
+                </ul>
+              </div> <!-- End tag  -->
+
+
+
+
+
+
+
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include 'core/footer.html' %}
+
+  <!--Scroll to top-->
+  <div id="scroll-to-top" class="scroll-to-top">
+    <span class="icon ion-ios-arrow-up"></span>
+  </div>
+
+  <!-- 
+    Essential Scripts
+    =====================================-->
+
+
+  <!-- Main jQuery -->
+  <script src={% static 'plugins/jquery/jquery.min.js' %}></script>
+  <!-- Bootstrap 3.1 -->
+  <script src={% static 'plugins/bootstrap/bootstrap.min.js' %}></script>
+  <!-- slick Carousel -->
+  <script src={% static 'plugins/slick/slick.min.js' %}></script>
+  <script src={% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}></script>
+  <!-- filter -->
+  <script src={% static 'plugins/shuffle/shuffle.min.js' %}></script>
+  <script src={% static 'plugins/SyoTimer/jquery.syotimer.min.js' %}></script>
+   
+
+  <script src={% static 'js/script.js' %}></script>
+
+</body>
+
+</html>

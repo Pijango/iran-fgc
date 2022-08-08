@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>{% block title %}Not Found{% endblock title %}</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content=" Team Iran - FIRST Global Challenge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+
+   
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href={% static 'images/favicon.png' %} />
+
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href={% static 'plugins/bootstrap/bootstrap.min.css' %}>
+  <!-- Ionic Icon Css -->
+  <link rel="stylesheet" href={% static 'plugins/Ionicons/css/ionicons.min.css' %}>
+  <!-- animate.css -->
+  <link rel="stylesheet" href={% static 'plugins/animate-css/animate.css' %}>
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" href={% static 'plugins/magnific-popup/magnific-popup.css' %}>
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href={% static 'plugins/slick/slick.css' %}>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href={% static 'css/style.css' %}>
+
+</head>
+
+<body id="body">
+<section class="page-404">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="{% url 'index' %}">
+					<img src={% static 'images/logo.png' %} alt="site logo" />
+				</a>
+				<h1>404</h1>
+				<h2>Page Not Found</h2>
+				<a href="{% url 'index' %}" class="btn btn-main"><i class="tf-ion-android-arrow-back"></i> Go Home</a>
+				<p class="copyright mt-5 mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Designed & Developed by <a
+						href="http://www.themefisher.com">Themefisher</a>. All rights reserved.
+					<br> Get More <a href="https://themefisher.com/free-bootstrap-templates/">Free Bootstrap
+						Templates</a>
+			</div>
+		</div>
+	</div>
+</section>
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+
+    <!-- Main jQuery -->
+    <script src={% static 'plugins/jquery/jquery.min.js' %}></script>
+    <!-- Bootstrap 3.1 -->
+    <script src={% static 'plugins/bootstrap/bootstrap.min.js' %}></script>
+    <!-- slick Carousel -->
+    <script src={% static 'plugins/slick/slick.min.js' %}></script>
+    <script src={% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}></script>
+    <!-- filter -->
+    <script src={% static 'plugins/shuffle/shuffle.min.js' %}></script>
+    <script src={% static 'plugins/SyoTimer/jquery.syotimer.min.js' %}></script>
+
+    <script src={% static 'js/script.js' %}></script>
+
+    </body>
+
+    </html>

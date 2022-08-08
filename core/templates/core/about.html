@@ -1,0 +1,247 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>{% block title %}About Us{% endblock title %}</title>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content=" Team Iran - FIRST Global Challenge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	
+
+	 
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href={% static 'images/favicon.png' %} />
+
+
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href={% static 'plugins/bootstrap/bootstrap.min.css' %}>
+	<!-- Ionic Icon Css -->
+	<link rel="stylesheet" href={% static 'plugins/Ionicons/css/ionicons.min.css' %}>
+	<!-- animate.css -->
+	<link rel="stylesheet" href={% static 'plugins/animate-css/animate.css' %}>
+	<!-- Magnify Popup -->
+	<link rel="stylesheet" href={% static 'plugins/magnific-popup/magnific-popup.css' %}>
+	<!-- Slick CSS -->
+	<link rel="stylesheet" href={% static 'plugins/slick/slick.css' %}>
+
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href={% static 'css/style.css' %}>
+
+</head>
+
+<body id="body">
+
+	{% include 'core/header.html' %}
+
+	<section class="page-title bg-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h1>About Our Team</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about section">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img class="img-fluid" src={% static 'images/company/about.jpg' %}>
+					</div>
+				</div>
+				<div class="col-lg-6 mt-5 mt-lg-0">
+					<div class="pl-0 pl-lg-4">
+						<h2>This Is <b>Team Iran</b></h2>
+						<p>In <b>2017</b>, this team entered the first round of this tournament as the only
+							representative from
+							Iran.Furthermore, it won the 14th title in the competition with 157 countries. Then the team
+							participated in the <b>2018 Mexico</b> and <b>2019 Dubai</b> competitions. Moreover, the
+							tournament
+							organizers gave it special attention in all these periods.
+						</p>
+						<p>
+							In <b>2020</b>, in the fourth edition of this World Olympiad, the Iranian team, with the
+							presence
+							of <b>35 students</b>, succeeded in qualifying to be in the <b>Top 20</b> teams with two
+							projects: an
+							<b>intelligent system for managing and saving water consumption</b> and a
+							<b>device for disinfecting clothes and equipment</b>
+							, and also along with eight other countries.
+							<br> Our mentor, <b>Mohammadreza Karami</b>, also won the <b>Outstanding Mentor Award</b>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-lg-6 mt-5 mt-lg-0">
+					<div class="pl-0 pl-lg-4">
+						<p>
+							The fourth and fifth rounds of the First Global World Olympiad were held online in the
+							last two years due to the Coronavirus. The Iranian team participated in the fifth round of
+							the competition in 2021 with the presence of <b>16 students</b> from all over the country,
+							and by
+							presenting <b>Smart trash can for compost production</b>, it won <b>2nd place</b> in the
+							<b>FIRST Global Grand Challenge Award</b> in the Environment branch, which was a source of
+							pride for
+							the country of Iran.
+						</p>
+						<p>
+							This team, which has been continuously <b>invited to all competitions</b> by the managers of
+							the
+							first global since the first round of the competition, this year, after the official
+							invitation, is busy with planning and preparations to participate in the sixth round of the
+							competition in <b>Switzerland</b>.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img class="img-fluid" src={% static 'images/call-to-action-bg.jpg' %}>
+					</div>
+				</div>
+			</div>
+			<div class="row counter-box text-center mt-50">
+				<div class="col-lg-4 col-md-4 col-6 mt-4">
+					<div class="counter-item">
+						<i class="ion-university"></i>
+						<h4 class="count" data-count="150">0</h4>
+						<span>Students</span>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-6 mt-4">
+					<div class="counter-item">
+						<i class="ion-ios-people"></i>
+						<h4 class="count" data-count="15">0</h4>
+						<span>Mentors</span>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-6 mt-4">
+					<div class="counter-item">
+						<i class="ion-ios-timer"></i>
+						<h4 class="count" data-count="9">0</h4>
+						<span>Years of Experience</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about-feature bg-dark section dark-service">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title">
+						<h2>Things We Develope In Our Team</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<div class="service-item">
+						<i class="ion-ios-color-filter-outline"></i>
+						<h4>Leadership</h4>
+						<p>Students get to experience true leadership through the time</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="service-item">
+						<i class="ion-android-contact"></i>
+						<h4>Friendship</h4>
+						<p>New people meet each other from all around the country and also around the world and new
+							friendships will develope</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="service-item">
+						<i class="ion-star"></i>
+						<h4>Teamwork</h4>
+						<p>All the students will have a part for the great project and they will learn how to work with
+							team</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="service-item">
+						<i class="ion-ios-infinite"></i>
+						<h4>Science and Skills</h4>
+						<p>Multiple workshops and courses in multiple fields from math and programming to art and music
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="service-item">
+						<i class="ion-ios-lightbulb-outline"></i>
+						<h4>New Experiences</h4>
+						<p>Students get to meet and communicate with other students from all around the world
+							<br>They get to cooperate with each other to solve issues and bring new ideas to life!
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="service-item">
+						<i class="icon ion-android-search"></i>
+						<h4>Decision Making</h4>
+						<p>Brainstorm sessions and multiple meetings around different subjects will teach students how
+							to wisely make decisions</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="call-to-action bg-1 section-sm overly">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h2 class="mb-3">Great Opportunity</h2>
+						<p>Read more about what we do and who we are. <br>If you want to join us, or help us, or have
+							any question, check the link below! <br>
+							<a class="btn btn-main btn-solid-border" href="{% url 'contact' %}">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include 'core/footer.html' %}
+
+
+	<!--Scroll to top-->
+	<div id="scroll-to-top" class="scroll-to-top">
+		<span class="icon ion-ios-arrow-up"></span>
+	</div>
+
+	<!-- 
+    Essential Scripts
+    =====================================-->
+
+
+	<!-- Main jQuery -->
+	<script src={% static 'plugins/jquery/jquery.min.js' %}></script>
+	<!-- Bootstrap 3.1 -->
+	<script src={% static 'plugins/bootstrap/bootstrap.min.js' %}></script>
+	<!-- slick Carousel -->
+	<script src={% static 'plugins/slick/slick.min.js' %}></script>
+	<script src={% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}></script>
+	<!-- filter -->
+	<script src={% static 'plugins/shuffle/shuffle.min.js' %}></script>
+	<script src={% static 'plugins/SyoTimer/jquery.syotimer.min.js' %}></script>
+
+	<script src={% static 'js/script.js' %}></script>
+
+</body>
+
+</html>
