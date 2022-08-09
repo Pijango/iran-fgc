@@ -290,11 +290,9 @@ input[type=tel]:focus {
   margin-bottom: 20px;
 }
 .section-title p {
-  font-style: italic;
   font-size: 120%;
-  /* color: #666; */
-  color: #EA5E4F;
-  font-family: "Volkhov", serif;
+  color: #666;
+  font-family: serif;
 }
 
 .section-subtitle {
