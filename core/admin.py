@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contact
+from .models import Contact, Workshop
 
 
 @admin.register(Contact)
@@ -13,3 +13,8 @@ class Contact(admin.ModelAdmin):
             return msg
         elif len(msg) >= 40:
             return msg[:40] + '...'
+
+
+@admin.register(Workshop)
+class Workshop(admin.ModelAdmin):
+    pass
