@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
 from .forms import ContactForm
-from .models import Contact
+from .models import Contact, Workshop
 from django.core.mail import send_mail
 from django.conf import settings
+
 
 class IndexView(TemplateView):
     template_name = 'core/index.html'
@@ -50,3 +51,9 @@ class ComingSoonView(TemplateView):
 
 class ErrorView(TemplateView):
     template_name = 'core/404.html'
+
+
+class WorkshopView(ListView):
+    template_name = 'core/workshop.html'
+    model = Workshop
+    context_object_name = 'workshops'
