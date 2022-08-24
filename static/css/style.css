@@ -8,6 +8,11 @@
 @charset "UTF-8";
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Volkhov:ital@1&display=swap");
+@font-face {
+  font-family: vazir;
+  src: url('../fonts/vazirmatn/Vazirmatn-Regular.ttf');
+}
+
 body {
   line-height: 1.65;
   font-family: "Roboto", sans-serif;
@@ -108,6 +113,10 @@ input[type=tel]:focus {
   border: 1px solid #58949C;
 }
 
+.farsi-content {
+  font-family: vazir, "Roboto", sans-serif;
+}
+
 .form-control {
   box-shadow: none;
   border-radius: 0;
@@ -132,7 +141,7 @@ input[type=tel]:focus {
   border-radius: 0;
   transition: all 0.2s ease;
 }
-.btn-main.btn-icon i, .btn-icon.btn-small i, .btn-icon.btn-transparent i {
+.btn-main .btn-icon i, .btn-icon.btn-small i, .btn-icon.btn-transparent i {
   font-size: 16px;
   vertical-align: middle;
   margin-right: 5px;
