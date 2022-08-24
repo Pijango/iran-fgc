@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>{% block title %}Contact Us{% endblock title %}</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" Team Iran - FIRST Global Challenge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href={% static 'images/favicon.png' %} />
+
+
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href={% static 'plugins/bootstrap/bootstrap.min.css' %}>
+    <!-- Ionic Icon Css -->
+    <link rel="stylesheet" href={% static 'plugins/Ionicons/css/ionicons.min.css' %}>
+    <!-- animate.css -->
+    <link rel="stylesheet" href={% static 'plugins/animate-css/animate.css' %}>
+    <!-- Magnify Popup -->
+    <link rel="stylesheet" href={% static 'plugins/magnific-popup/magnific-popup.css' %}>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href={% static 'plugins/slick/slick.css' %}>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href={% static 'css/style.css' %}>
+
+</head>
+
+<body id="body">
+    {% include 'core/header.html' %}
+
+    <section class="page-wrapper">
+        <div class="container farsi-content">
+            <div class="text-center">
+                <a href="https://www.instagram.com/teamiranfgc/" class="btn-main btn-round btn-view-works text-center">اینستاگرام</a>                
+            </div>
+            <br>
+            <div class="text-center">
+                <a href="https://first.global/2022-nations/iran-2022/" class="btn-main btn-round btn-view-works">FGC Profile 2022</a>
+            </div>
+            <br>
+            <div class="text-center">
+                <a href="https://www.twitter.com/teamiranfgc/" class="btn-main btn-round btn-view-works">توییتر</a>
+            </div>
+            <br>
+            <div class="text-center">
+                <a href="https://www.twitter.com/teamiranfgc/" class="btn-main btn-round btn-view-works">حمایت مالی</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'core/footer.html' %}
+
+
+    <!--Scroll to top-->
+    <div id="scroll-to-top" class="scroll-to-top">
+        <span class="icon ion-ios-arrow-up"></span>
+    </div>
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+
+    <!-- Main jQuery -->
+    <script src={% static 'plugins/jquery/jquery.min.js' %}></script>
+    <!-- Bootstrap 3.1 -->
+    <script src={% static 'plugins/bootstrap/bootstrap.min.js' %}></script>
+    <!-- slick Carousel -->
+    <script src={% static 'plugins/slick/slick.min.js' %}></script>
+    <script src={% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}></script>
+    <!-- filter -->
+    <script src={% static 'plugins/shuffle/shuffle.min.js' %}></script>
+    <script src={% static 'plugins/SyoTimer/jquery.syotimer.min.js' %}></script>
+
+
+    <script src={% static 'js/script.js' %}></script>
+
+</body>
+
+</html>

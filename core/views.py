@@ -57,3 +57,6 @@ class WorkshopView(ListView):
     template_name = 'core/workshop.html'
     model = Workshop
     context_object_name = 'workshops'
+
+class linksView(TemplateView):
+    template_name = 'core/links.html'
