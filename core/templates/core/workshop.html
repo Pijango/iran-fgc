@@ -58,12 +58,16 @@
         <div class="col-lg-8 mt-5 mt-lg-0">
           <div class="pl-0 pl-lg-4">
             {% for w in workshops %}
-            <h4>{{ w.subject }}
-              <a href="{{ w.insta_link }}" class="btn-small btn-view-works">Instagram Post</a>
-              <a href="{{ w.workshop_link }}" class="btn-small btn-view-works">Workshop Link</a>
-            </h4>
-            <p>{{ w.description }}</p>
-            <hr>
+              <h4>{{ w.subject }}
+                <a href="{{ w.insta_link }}" class="btn-small btn-view-works">Instagram Post</a>
+                <a href="{{ w.workshop_link }}" class="btn-small btn-view-works">Workshop Link</a>
+              </h4>
+              <p>
+                {% autoescape off %}
+                  {{ w.description|linebreaks }}
+                {% endautoescape %}
+              </p>
+              <hr>
             {% endfor %}
           </div>
         </div>
