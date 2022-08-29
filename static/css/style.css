@@ -846,14 +846,18 @@ ul.dropdown-menu li {
   background: url("../images/slider-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* background-position: 10% 0%; */
   background-position: center;
   padding: 200px 0;
   position: relative;
 }
-@media (max-width: 992px) {
+@media (max-width: 550px) {
   .slider {
-    padding: 150px 0;
+    background: url("../images/slider-bg-small.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 35% 0;
+    position: relative;
   }
 }
 .slider .block {
