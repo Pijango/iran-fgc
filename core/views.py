@@ -60,3 +60,6 @@ class WorkshopView(ListView):
 
 class linksView(TemplateView):
     template_name = 'core/links.html'
+
+class NewTechChallengeView(TemplateView):
+    template_name = 'core/newtechchallenge.html'

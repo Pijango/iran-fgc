@@ -1,0 +1,232 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>{% block title %}New Tech Challenge{% endblock title %}</title>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content=" Team Iran - FIRST Global Challenge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href={% static 'images/favicon.png' %} />
+
+
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href={% static 'plugins/bootstrap/bootstrap.min.css' %}>
+	<!-- Ionic Icon Css -->
+	<link rel="stylesheet" href={% static 'plugins/Ionicons/css/ionicons.min.css' %}>
+	<!-- animate.css -->
+	<link rel="stylesheet" href={% static 'plugins/animate-css/animate.css' %}>
+	<!-- Magnify Popup -->
+	<link rel="stylesheet" href={% static 'plugins/magnific-popup/magnific-popup.css' %}>
+	<!-- Slick CSS -->
+	<link rel="stylesheet" href={% static 'plugins/slick/slick.css' %}>
+
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href={% static 'css/style.css' %}>
+
+</head>
+
+<body id="body">
+
+	{% include 'core/header.html' %}
+
+	<section class="page-title bg-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h1>About Our Project</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about section">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img class="img-fluid" src={% static 'images/new-tech-challenge/image1.png' %}>
+					</div>
+				</div>
+				<div class="col-lg-6 mt-5 mt-lg-0">
+					<div class="pl-0 pl-lg-4">
+						<h2>This Is <b>CZ Exhaust</b></h2>
+						<p>
+							We started our research based on the 6 Project Sectors we had and after several
+							brainstorming sessions we decided to choose the Transport Sector.
+
+							According to our research, since 2010, more than 60% of Tehran’s air pollution is generated
+							from transportation. This is caused due to low quality fuel, low quality cars, poor road and
+							urban planning. We also need to consider the fact that the technology of electric cars is
+							not going to be applied in our country in the near future.
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 mt-5 mt-lg-0">
+					<div class="pl-0 pl-lg-4">
+						<h2>Step One</h2>
+						<p>
+							There is a chamber with NaOH inside our exhaust, where gas enters through one side and
+							dissolves the CO2, transforming it into sodium carbonate precipitation.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img class="img-fluid" src={% static 'images/new-tech-challenge/image2.png' %}>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img class="img-fluid" src={% static 'images/new-tech-challenge/image3.png' %}>
+					</div>
+				</div>
+				<div class="col-lg-6 mt-5 mt-lg-0">
+					<div class="pl-0 pl-lg-4">
+						<h2>Step Two</h2>
+						<p>
+							There is an electrostatic charging via electrodes to particles and then through the way
+							particles are moving, they end up being absorbed into the filters inside the device.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 mt-5 mt-lg-0">
+					<div class="pl-0 pl-lg-4">
+						<h2>Step Three</h2>
+						<p>
+							Passing through a magnetic field and moving in a circular path where they end up sticking to
+							the filters that are placed inside.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img class="img-fluid" src={% static 'images/new-tech-challenge/image4.png' %}>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img class="img-fluid" src={% static 'images/new-tech-challenge/image5.png' %}>
+					</div>
+				</div>
+				<div class="col-lg-6 mt-5 mt-lg-0">
+					<div class="pl-0 pl-lg-4">
+						<h2>Step Four</h2>
+						<p>
+							Electrical charged particles are dangerous and may stick to human lungs, therefore, after
+							step three, all remaining particles are processed through HEPA filters.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 mt-5 mt-lg-0">
+					<div class="pl-0 pl-lg-4">
+						<h2>Step Five</h2>
+						<p>
+							Finally, the smoke passes from containing a graphene nanoparticle metal foams box, which is
+							placed inside in the trunk of the car and It is possible to replace the box and foams inside
+							the car trunk after a specific period of time.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img class="img-fluid" src={% static 'images/new-tech-challenge/image6.png' %}>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row align-items-center">
+				<!-- <div class="col-lg-6">
+					<div class="about-img">
+						<img class="img-fluid" src={% static 'images/new-tech-challenge/image5.png' %}>
+					</div>
+				</div> -->
+				<br><hr>
+				<div class="col-lg-12 mt-5 mt-lg-0">
+					<div class="pl-0 pl-lg-4">
+						<h2>Conclusion</h2>
+						<p>
+							The Problem is Filters capacity and Replacement of used filters.
+							And the Solution is Using a mechanical exchange system with a sensor to automatically
+							exchange filters and passing through the NaOH solution.
+							We will continue to do so and fully develop the process to achieve our main goals, even
+							after First Global.
+							We are in the process of researching the conversion of captured carbon into Biochar, which
+							is a soil conditioner and stable storage of carbon.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	{% include 'core/footer.html' %}
+
+
+	<!--Scroll to top-->
+	<div id="scroll-to-top" class="scroll-to-top">
+		<span class="icon ion-ios-arrow-up"></span>
+	</div>
+
+	<!-- 
+    Essential Scripts
+    =====================================-->
+
+
+	<!-- Main jQuery -->
+	<script src={% static 'plugins/jquery/jquery.min.js' %}></script>
+	<!-- Bootstrap 3.1 -->
+	<script src={% static 'plugins/bootstrap/bootstrap.min.js' %}></script>
+	<!-- slick Carousel -->
+	<script src={% static 'plugins/slick/slick.min.js' %}></script>
+	<script src={% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}></script>
+	<!-- filter -->
+	<script src={% static 'plugins/shuffle/shuffle.min.js' %}></script>
+	<script src={% static 'plugins/SyoTimer/jquery.syotimer.min.js' %}></script>
+
+	<script src={% static 'js/script.js' %}></script>
+
+</body>
+
+</html>
