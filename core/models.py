@@ -6,6 +6,10 @@ class Contact(models.Model):
     email = models.EmailField()
     subject = models.CharField(max_length=255)
     message = models.TextField()
+    date = models.DateField(auto_now_add=True, null=True)
+
+    def __str__(self):
+        return f"{self.pk} | {self.name} | {self.email}"
 
 
 class Workshop(models.Model):
