@@ -6,6 +6,9 @@ from .models import Contact, Workshop
 class Contact(admin.ModelAdmin):
     list_display = ['id', 'name', 'subject', 'short_message', 'date']
     search_fields = ['subject', 'email', 'short_message', 'id', 'name', 'date']
+    fieldsets = (
+        (None, {'fields': ['id', 'name', 'email', 'subject', 'message', 'date']}),)
+    readonly_fields = ['id', 'date']
 
     def short_message(self, obj):
         msg = obj.message
