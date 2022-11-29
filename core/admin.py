@@ -4,8 +4,8 @@ from .models import Contact, Workshop
 
 @admin.register(Contact)
 class Contact(admin.ModelAdmin):
-    list_display = ['id', 'name', 'subject', 'short_message']
-    search_fields = ['subject', 'email', 'short_message', 'id', 'name']
+    list_display = ['id', 'name', 'subject', 'short_message', 'date']
+    search_fields = ['subject', 'email', 'short_message', 'id', 'name', 'date']
 
     def short_message(self, obj):
         msg = obj.message
